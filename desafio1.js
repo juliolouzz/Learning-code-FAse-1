@@ -12,7 +12,7 @@ const altura = 1.67
 
 const imc = peso / (altura * altura)
 if( imc >= 30){
-    console.log(`${nome}, Voccê está acima do peso`)
+    console.log(`${nome}, Você está acima do peso`)
 } else( imc <= 29.9){
     console.log(`${nome}, Você não está acima do peso`
 }
@@ -20,7 +20,7 @@ if( imc >= 30){
 
 //Crie um programa para calcular a aposentadoria de uma pessoa.
 //Obs.: Esse cálculo é fictício, dentro da aposentadoria existem muitos outros fatores para serem levados em conta :)
-//Comece criando constantes para armazenar nome, sexo, idade e contribuicao(em anos).
+//Comece criando constantes para armazenar nome, sexo, idade e contribuição(em anos).
 
 //Baseado nos valores acima utilize as fórmulas a seguir para calcular se a pessoa está apta ou não para se aposentar 
 //e no fim imprima uma mensagem em tela.
@@ -34,8 +34,8 @@ if( imc >= 30){
 
 /*Dica: Você pode unir duas condições, veja o exemplo abaixo
 
-if (condicao1) {
-  if (condicao2) {
+if (condição1) {
+  if (condição2) {
     // Condição 1 e 2 passaram
   } else {
     // Condição 1 passou, porém condição 2 não passou
@@ -49,13 +49,13 @@ if (condicao1) {
 const nome = 'Silvana'
 const sexo = 'F'
 const idade = 48
-const contribuicao = 23
+const contribuição = 23
 
-const calculoContribuicao = idade + contribuicao
+const calculoContribuição = idade + contribuição
 
 // essas variáveis irão retornar true ou false
-const homemPodeAposentar = sexo == 'M' && contribuicao >= 35 && calculoContribuicao >= 95
-const mulherPodeAposentar = sexo == 'F' && contribuicao >= 30 && calculoContribuicao >= 85
+const homemPodeAposentar = sexo == 'M' && contribuição >= 35 && calculoContribuição >= 95
+const mulherPodeAposentar = sexo == 'F' && contribuição >= 30 && calculoContribuição >= 85
 
 if ( homemPodeAposentar || mulherPodeAposentar) {
     console.log(`${nome}, você pode se aposentar!`)

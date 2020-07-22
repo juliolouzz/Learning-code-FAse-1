@@ -16,7 +16,7 @@ Obs.: Para armazenar os dados de endereço da empresa
  você pode criar objetos intercalados, por exemplo:
 
  ===========================
-const usuario = {
+const usuário = {
   nome: "Diego",
   empresa: {
     nome: "Rocketseat"
@@ -30,24 +30,24 @@ A empresa Rocketseat está localizada em Rua Guilherme Gembala, 260
 Obs. Para imprimir em tela utilize o formato de template strings, por exemplo
 
 ====================================================
-console.log(`O nome do usuário é ${usuario.nome}`);
+console.log(`O nome do usuário é ${usuário.nome}`);
 ====================================================
 */
 
-const usuario = {
+const usuário = {
     nome: 'Diego',
     empresa: {
         nome: "Rocketseat",
         cor: "roxo",
         foco: "Programação",
-        endereco: {
+        endereço: {
             rua: "Rua Guilherme Gembala",
             numero: 260
         }
     }
 }
 
-console.log(`A empresa ${usuario.empresa.nome} está localizada em ${usuario.empresa.endereco.rua}, ${usuario.empresa.endereco.numero}`)
+console.log(`A empresa ${usuário.empresa.nome} está localizada em ${usuário.empresa.endereço.rua}, ${usuário.empresa.endereço.numero}`)
 
 /*Crie um programa com um objeto para armazenar dados de um programador como nome, idade e tecnologias que trabalha.
 

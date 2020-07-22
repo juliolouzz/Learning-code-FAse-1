@@ -1,5 +1,5 @@
 //Criar um programa que
-//caucula as medias dos alunos
+//calcula as medias dos alunos
 // e envia msg das medias
 
 const alunos = [
@@ -20,7 +20,7 @@ const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 
 //Se a media for maior que 5, parabenizar a turma.
 if (media > 5) {
-    console.log(`A sua media foi de ${media}, Parabens.`)
+    console.log(`A sua media foi de ${media}, Parabéns.`)
 } else{
     console.log(`Sua media foi menor que 5`)
 }
@@ -35,12 +35,12 @@ if (media > 5) {
     !=   diferente de
     !==  diferente, inclusive do tipo
 */
-/* operadores logicos
+/* operadores lógicos
 
     &&     "E" As duas condições devem ser verdadeiras
            para que a condição final seja verdadeira
     
-    ||      "OU" Uma das condiçõe deve ser verdadeira
+    ||      "OU" Uma das condições deve ser verdadeira
             para que a condição final seja verdadeira
     
     !       "NÃO" Nega uma condição
