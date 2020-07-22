@@ -3,13 +3,13 @@
 // e envia msg das medias
 
 const alunos = [
-    {   nome: 'cabral'
+    {   nome: 'cabral',
         nota: 9.8,
     },
-    {   nome:'junkeira'
+    {   nome:'junkeira',
         nota: 10
     },
-    {   nome:"tigas"
+    {   nome:"tigas",
         nota: 2 
     },
 ]
