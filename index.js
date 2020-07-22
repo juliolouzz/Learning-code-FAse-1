@@ -2,18 +2,21 @@
 //caucula as medias dos alunos
 // e envia msg das medias
 
-const aluno01 = 'cabral'
-const notaaluno01 = 9.8
+const alunos = [
+    {   nome: 'cabral'
+        nota: 9.8,
+    },
+    {   nome:'junkeira'
+        nota: 10
+    },
+    {   nome:"tigas"
+        nota: 2 
+    },
+]
 
-const aluno02 = 'junkeira'
-const notaaluno02 = 10
 
-const aluno03 = 'tigas'
-const notaaluno03 = 2
+const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
 
-const media = (notaaluno01 + notaaluno02 + notaaluno03) / 3
-
-console.log(media)
 
 //Se a media for maior que 5, parabenizar a turma.
 if (media > 5) {
