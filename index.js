@@ -1,83 +1,110 @@
-//Criar um programa que
-//calcula as medias das turmas dos alunos
-// e envia msg das medias
-
-const alunosDaTurmaA = [
-    {   nome: 'cabral',
-        nota: 1.8,
-    },
-    {   nome:'junkeira',
-        nota: 10
-    },
-    {   nome:"tigas",
-        nota: 2 
+const ClassA = [
+    {
+        name: 'cabral',
+        grade: 1.8
     },
     {
-        nome:"João",
-        nota: 10
+        name: 'junkeira',
+        grade: 10
+    },
+    {
+        name: "tigas",
+        grade: 2
+    },
+    {
+        name: "João",
+        grade: 10
     },
 ]
 
-const alunosDaTurmaB = [
-    {   nome: 'Cleiton',
-        nota: 9.8,
-    },
-    {   nome:'Robson',
-        nota: 10
-    },
-    {   nome:"junior",
-        nota: 0 
+const ClassB = [
+    {
+        name: 'Cleiton',
+        grade: 9.8
     },
     {
-        nome:"Novo Aluno",
-        nota: 5
+        name: 'Robson',
+        grade: 10
+    },
+    {
+        name: "junior",
+        grade: 0
+    },
+    {
+        name: "Novo Aluno",
+        grade: 5
     },
 ]
 
-function calculaMedia(alunos) {
-    let soma = 0;
-   for (let i = 0; i < alunos.length; i++ ) {
-        soma = soma + alunos[i].nota
-        
-   }
-        const media = soma / alunos.length
-        return media
+function calculateAverage(students) {
+    let sum = 0
+    for (let i = 0; i < students.length; i++) {
+        sum = sum + students[i].grade
+
+    }
+    const average = sum / students.length
+    return average
 }
 
-const media1 = calculaMedia(alunosDaTurmaA)
-const media2 = calculaMedia(alunosDaTurmaB)
-
-function enviaMensagem(media, turma) {
-//Se a media for maior que 5, parabenizar a turma.
-if (media > 5) {
-    console.log(`A sua media da turma ${turma} foi de ${media}, Parabéns.`)
-} else  {
-    console.log(`Sua media da turma ${turma} foi menor que 5`)
-        }
+function sendMessage(average, turma) {
+    if (average > 5) {
+        console.log(` ${turma} average: ${average}, Congratulations.`)
+    } else {
+        console.log(` ${turma} average: ${average}. Is not good enough`)
+    }
 }
 
-enviaMensagem(media1,'turmaA')
-enviaMensagem(media2,'turmaB')
+function markAsFlunked(student) {
+    student.flunked = false
+    
+    if (student.grade < 5) {
+        student.flunked = true
+    }
+}
+
+
+function sendFlunkedMessage(student) {
+    if (student.flunked) {
+        console.log(` ${student.name} flunked`)
+    }
+
+}
+
+function studentsFlunked(students) {
+    for (let student of students) {
+        markAsFlunked(student)
+        sendFlunkedMessage(student)
+    }
+}
+
+const average1 = calculateAverage(ClassA)
+const average2 = calculateAverage(ClassB)
+
+sendMessage(average1, 'classA')
+sendMessage(average2, 'classB')
+
+studentsFlunked(ClassA)
+studentsFlunked(ClassB)
 
 /*  operadores comparativos
-    >    maior
-    <    menor
-    >=   maior igual a
-    <=   menor igual a
-    ==   igual a
-    ===  igual e do mesmo tipo
-    !=   diferente de
-    !==  diferente, inclusive do tipo
+>    maior
+<    menor
+>=   maior igual a
+<=   menor igual a
+==   igual a
+===  igual e do mesmo tipo
+!=   diferente de
+!==  diferente, inclusive do tipo
 */
 /* operadores lógicos
 
-    &&     "E" As duas condições devem ser verdadeiras
-           para que a condição final seja verdadeira
-    
-    ||      "OU" Uma das condições deve ser verdadeira
-            para que a condição final seja verdadeira
-    
-    !       "NÃO" Nega uma condição
+&&     "E" As duas condições devem ser verdadeiras
+    para que a condição final seja verdadeira
+
+||      "OU" Uma das condições deve ser verdadeira
+        para que a condição final seja verdadeira
+
+!       "NÃO" Nega uma condição
 */
 
 // Desafio da idade
@@ -89,9 +116,9 @@ enviaMensagem(media2,'turmaB')
 const idade = 18
 
 if( !(idade >= 18) || idade === 17){
-    console.log(`Bloquear Entrada`)
+console.log(`Bloquear Entrada`)
 } else(
-    console.log(`Deixar entrar`)
+console.log(`Deixar entrar`)
 
 )
 */
