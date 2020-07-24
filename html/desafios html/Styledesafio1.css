@@ -1,0 +1,75 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&display=swap";
+
+:root {
+     --purple-: #8349ce;
+     --blue-links: #1900ff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+    body{
+        
+        margin: 0;
+        background-color:white;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+    }
+    header{
+        padding: 32px;
+       
+
+    }
+    .links{
+        text-align: center;
+        
+    }
+    .links a{
+        
+        color: var(--purple-);
+        font-size: 20px;
+        line-height: 30px;
+        margin: 0 30px;
+        text-decoration: none;
+    }
+    .links a:hover {
+        color: var(--blue-links);
+        transition: color 200ms;
+     }
+
+    #Bodytext {
+        text-align: center;
+        padding: 20px;
+    }
+#Bodytext img{
+    height: 100px;
+    padding: 10px 30px;
+    border: 2px solid black ;
+}
+    #Bodytext h1{
+        font-size: 42px;
+        line-height: 52px;
+        font-weight: bold;
+        padding: 20px;
+    }
+    #Bodytext h2{
+        font-size: 22px;
+        line-height: 32px;
+        padding-bottom: 10px;
+    }
+
+#Bodytext ul{
+    font-size: 22px;
+    line-height: 32px;
+    
+    
+
+}
+#Bodytext li{
+    font-size: 17px;
+    line-height: 27px;
+    
+}
